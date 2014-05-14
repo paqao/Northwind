@@ -177,7 +177,11 @@
     <Compile Include="Territory.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\ShipperViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
+    <Compile Include="AddShipperWindow..xaml.cs">
+      <DependentUpon>AddShipperWindow..xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -191,6 +195,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="OrderFullDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddShipperWindow..xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,6 +225,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NorthwndEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="NorthwndEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NorthwndEntity.edmx</DependentUpon>

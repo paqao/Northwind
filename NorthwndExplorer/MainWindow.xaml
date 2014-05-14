@@ -9,7 +9,11 @@
                 <MenuItem Header="Połacz z bazą" Click="ConnectButton_Click"/>
                 <MenuItem Header="Wyjdz" Click="ExitButton_Click"/>
             </MenuItem>
-            <MenuItem Header="Szczegoly" Click="MenuItem_Click"/>
+            <MenuItem Header="Szczegoly">
+                <MenuItem Header="Dodaj Shipper" Click="ShipperButton_Click"/>
+                <MenuItem Header="Awans pracownika" Click="EmployeeButton_Click"/>
+            </MenuItem>
+          
         </Menu>
         <DataGrid x:Name="Orders" HorizontalAlignment="Stretch" Margin="0,26,0,0" >
            

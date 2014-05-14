@@ -22,7 +22,7 @@ namespace NorthwndExplorer
     public partial class MainWindow : Window
     {
         NORTHWNDEntities1 ctx = new NORTHWNDEntities1();
-        public MainWindow()
+        /*public MainWindow()
         {
             InitializeComponent();
             var orderList = new List<OrderViewModel>();
@@ -31,7 +31,7 @@ namespace NorthwndExplorer
                 orderList.Add(new OrderViewModel(Order));
             }
             this.Orders.ItemsSource = orderList;
-        }
+        }*/
 
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +44,16 @@ namespace NorthwndExplorer
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShipperButton_Click(object sender, RoutedEventArgs e)
+        {
+            new AddShipperWindow().Show();     
+        }
+
+        private void EmployeeButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
