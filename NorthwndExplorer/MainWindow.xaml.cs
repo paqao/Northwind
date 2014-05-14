@@ -53,8 +53,9 @@ namespace NorthwndExplorer
             new AddShipperWindow().Show();     
         }
 
-        private void EmployeeButton_Click(object sender, RoutedEventArgs e) { 
-
-}
+        private void EmployeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            new EmployeeList().Show();
+        }
     }
 }
