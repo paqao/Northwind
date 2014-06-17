@@ -57,5 +57,10 @@ namespace NorthwndExplorer
         {
             new EmployeeList().Show();
         }
+
+        private void ProductsTransaction_Click(object sender, RoutedEventArgs e)
+        {
+            new ProductsOnStage().Show();
+        }
     }
 }

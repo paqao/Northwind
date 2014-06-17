@@ -149,6 +149,9 @@
     <Compile Include="Product.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProductsOnStage.xaml.cs">
+      <DependentUpon>ProductsOnStage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Products_Above_Average_Price.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
@@ -183,6 +186,7 @@
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\ProductViewModel.cs" />
     <Compile Include="ViewModels\ShipperViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
     <Compile Include="AddShipperWindow..xaml.cs">
@@ -209,6 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddShipperWindow..xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductsOnStage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

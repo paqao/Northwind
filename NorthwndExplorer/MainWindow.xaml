@@ -12,6 +12,7 @@
             <MenuItem Header="Szczegoly">
                 <MenuItem Header="Dodaj Shipper" Click="ShipperButton_Click"/>
                 <MenuItem Header="Awans pracownika" Click="EmployeeButton_Click"/>
+                <MenuItem x:Name="ProductsTransaction"  Click="ProductsTransaction_Click" Header="Pomniejsz produkty" />
             </MenuItem>
           
         </Menu>
