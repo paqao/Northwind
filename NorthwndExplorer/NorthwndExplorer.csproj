@@ -107,11 +107,8 @@
     <Compile Include="Employee.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeList.Designer.cs">
-      <DependentUpon>EmployeeList.cs</DependentUpon>
+    <Compile Include="EmployeeList.xaml.cs">
+      <DependentUpon>EmployeeList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Invoice.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
@@ -185,11 +182,16 @@
     <Compile Include="Territory.cs">
       <DependentUpon>NorthwndEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
     <Compile Include="ViewModels\ShipperViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
     <Compile Include="AddShipperWindow..xaml.cs">
       <DependentUpon>AddShipperWindow..xaml</DependentUpon>
     </Compile>
+    <Page Include="EmployeeList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -225,9 +227,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="EmployeeList.resx">
-      <DependentUpon>EmployeeList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

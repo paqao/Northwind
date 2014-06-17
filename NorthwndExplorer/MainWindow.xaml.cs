@@ -22,7 +22,7 @@ namespace NorthwndExplorer
     public partial class MainWindow : Window
     {
         NORTHWNDEntities1 ctx = new NORTHWNDEntities1();
-        /*public MainWindow()
+        public MainWindow()
         {
             InitializeComponent();
             var orderList = new List<OrderViewModel>();
@@ -31,7 +31,7 @@ namespace NorthwndExplorer
                 orderList.Add(new OrderViewModel(Order));
             }
             this.Orders.ItemsSource = orderList;
-        }*/
+        }
 
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
