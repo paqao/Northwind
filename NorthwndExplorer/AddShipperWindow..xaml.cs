@@ -37,8 +37,15 @@ namespace NorthwndExplorer
 
             textbox1.Text = String.Empty;
             textbox2.Text = String.Empty;
+            
+            if(shipper1.CompanyName != null && shipper1.CompanyName != "" )
+                return;
 
             MessageBox.Show("You added a shipper");
+
+            NORTHWNDEntities1 entities = new NORTHWNDEntities1();
+
+            entities.Shippers.Add(shipper);
         }
     }
 }
