@@ -46,6 +46,7 @@ namespace NorthwndExplorer
             NORTHWNDEntities1 entities = new NORTHWNDEntities1();
 
             entities.Shippers.Add(shipper);
+            entities.SaveChanges();
         }
     }
 }
